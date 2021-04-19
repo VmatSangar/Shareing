@@ -8,8 +8,8 @@ package LatihanJava;
  * @author UmatSangar
  */
 public class LatihanCetak {public static void main(String[] args) {
-    System.out.println("Nama: Ilham Kamal"); 
-    System.out.println("NIM : 17200392");
+    System.out.println(""); 
+    System.out.println("");
     System.out.println("Pemograman Java menurut saya java merupakan sebuah bahasa yang berorientasi objek dan dapat dijalankan atau bisa disebut run pada segala sistem operasi");
     System.out.println("Kekurangan java ialah pengunaan memory yang cukup tinggi dan sudah didekompilasi sedangkan kelebihannya adalah mudah untuk dikembangkan dan sifatnya multiplatfrom");
     }
@@ -24,7 +24,7 @@ package LatihanJava;
  * @author UmatSangar
  */
 public class LatihanHitung {public static void main(String[] args) {
-    System.out.println("Nama: Ilham Kamal NIM: 17200392");
+    System.out.println("");
     //Deklarasi Variabel
     int NilaiA,NilaiB,HitungTambah,HitungKali;
         double HitungBagi;
@@ -57,7 +57,7 @@ public class LatihanInputHitung {public static void main(String[] args) {
       //Membuat Scanner Baru
          Scanner keyboard = new Scanner(System.in);
       //Tampilkan Output Ke User
-      System.out.println("====== PBO Kelas 17.2A.01 ======");
+      System.out.println("====== PBO  ======");
          System.out.println("Masukan Nama:");
          nama = keyboard.nextLine();
          System.out.println("Masukan NIM:");
@@ -148,7 +148,7 @@ import java.util.Scanner;
  */
 public class LatihanPerulangan {
     public static void main(String[] args){
-    System.out.println("Nama : ILham Kamal \nNIM : 17200392 \nKelas : 17.2A.01");
+    System.out.println("Nama :  \nNIM :  \nKelas : ");
     //Deklarasi Variabel
     String nama, fasilitas = null, nomor_HP;
     int kamar, lama_sewa, biaya = 0;
@@ -210,7 +210,7 @@ public class LatihanPerulangan {
 
 }
 
-===================================================================================================================================================================
+============================================================================================================================================================
 
 package LatihanJava;
 import java.util.Scanner;
@@ -370,7 +370,7 @@ public class Kasus2 {public static void main(String[] args){
     }
  
         System.out.println("\t\t DATA PELANGGAN PT. SENTOSA JAYA "); 
-        System.out.println("\t\t JL. KSU No.66A SUKMAJAYA DEPOK ");
+        System.out.println("\t\t JL. ");
 
         System.out.println("==============================================================");
         //System.out.println("No \t Kode Pelanggan \t Nama Pelanggan\t\t Alamat");
