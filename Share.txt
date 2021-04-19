@@ -1,0 +1,471 @@
+# Shareing
+Shareing-Shareing Ajah
+===================================================================================================================================================================
+
+package LatihanJava;
+/**
+ *
+ * @author UmatSangar
+ */
+public class LatihanCetak {public static void main(String[] args) {
+    System.out.println("Nama: Ilham Kamal"); 
+    System.out.println("NIM : 17200392");
+    System.out.println("Pemograman Java menurut saya java merupakan sebuah bahasa yang berorientasi objek dan dapat dijalankan atau bisa disebut run pada segala sistem operasi");
+    System.out.println("Kekurangan java ialah pengunaan memory yang cukup tinggi dan sudah didekompilasi sedangkan kelebihannya adalah mudah untuk dikembangkan dan sifatnya multiplatfrom");
+    }
+    
+}
+
+===================================================================================================================================================================
+
+package LatihanJava;
+/**
+ *
+ * @author UmatSangar
+ */
+public class LatihanHitung {public static void main(String[] args) {
+    System.out.println("Nama: Ilham Kamal NIM: 17200392");
+    //Deklarasi Variabel
+    int NilaiA,NilaiB,HitungTambah,HitungKali;
+        double HitungBagi;
+        NilaiA = 10;
+        NilaiB = 20;
+        //Proses Operasi
+            HitungTambah = NilaiA+NilaiB;
+            HitungKali   = NilaiA*NilaiB;
+            HitungBagi   = NilaiB/NilaiA;
+        //MencetakHasil
+            System.out.println("Penjumlahan Nilai A + Nilai B = "+ HitungTambah);
+            System.out.println("Perkalian Nilai A * Nilai B = " + HitungKali);
+            System.out.println("Pembagian Nilai B / Nilai A = " + HitungBagi);
+        }   
+  }   
+
+===================================================================================================================================================================
+
+package LatihanJava;
+import java.util.Scanner;
+/**
+ *
+ * @author UmatSangar
+ */
+public class LatihanInputHitung {public static void main(String[] args) {
+     //Deklarasi Variabel
+         String nama,nim;
+         int NilaiA,NilaiB,HitungTambah,HitungKurang,HitungKali;
+         double HitungBagi;
+      //Membuat Scanner Baru
+         Scanner keyboard = new Scanner(System.in);
+      //Tampilkan Output Ke User
+      System.out.println("====== PBO Kelas 17.2A.01 ======");
+         System.out.println("Masukan Nama:");
+         nama = keyboard.nextLine();
+         System.out.println("Masukan NIM:");
+         nim = keyboard.nextLine();
+         System.out.println("Masukan Nilai A :");
+         NilaiA = keyboard.nextInt();
+         System.out.println("Masukan Nilai B :");
+         NilaiB = keyboard.nextInt();
+       //Menampilkan Apa Yang Sudah Simpan Di Variabel
+         System.out.println("------------------------------");
+         System.out.println("Nama:" +nama);
+         System.out.println("NIM:" +nim);
+       //Proses
+         HitungTambah = NilaiA+NilaiB;
+         HitungKurang = NilaiA-NilaiB;
+         HitungKali   = NilaiA*NilaiB;
+         HitungBagi   = NilaiA/NilaiB;
+       //Mencetak Hasil
+         System.out.println("Hasil Nilai");
+         System.out.println("Penjumlahan Nilai A + Nilai B = "+ HitungTambah);
+         System.out.println("Pengurangan Nilai A - Nilai B = "+ HitungKurang);
+         System.out.println("Perkalian Nilai A * Nilai B = "+ HitungKali);
+         System.out.println("Pembagian Nilai A / Nilai B = "+ HitungBagi);
+     }
+ }
+
+===================================================================================================================================================================
+
+package LatihanJava;
+import java.util.Scanner;
+package LatihanJava;
+public class LatihanSeleksi {
+/**
+ *
+ * @author UmatSangar
+ */    
+    public static void main(String[] args){
+    //Deklarasi Variabel
+        String Nama,NIM,Hadiah;
+        int Harga,Jumlah;
+        double Total;
+    //Membuat Scanner Baru    
+        Scanner keyboard = new Scanner(System.in);
+    //Tampilan Output Ke User
+        System.out.println("Masukan Nama:");
+         Nama = keyboard.nextLine();
+         System.out.println("Masukan NIM:");
+         NIM = keyboard.nextLine();
+         System.out.println("Masukan Harga:");
+         Harga = keyboard.nextInt();
+         System.out.println("Jumlah Beli:");
+         Jumlah = keyboard.nextInt();
+     //Menampilkan Apa Yang Sudah Simpan Di Variabel
+         System.out.println("------------------------------");
+         System.out.println("Nama:" +Nama);
+         System.out.println("NIM:" +NIM);
+     //Proses
+         Total = Harga*Jumlah;
+         if (Total>=5000000){
+             Hadiah ="Kipas Angin";
+         }
+         else if (Total>=2000000){
+                  Hadiah ="Mug";
+         }
+         else if (Total>=1000000){
+                  Hadiah ="Pulpen";
+         }
+         else {
+                 Hadiah ="Tidak Ada Hadiah";
+         }
+     //Mencetak Hasil
+         System.out.println("Hasil Nilai");
+         System.out.println("Nama = "+ Nama);
+         System.out.println("NIM = "+ NIM);
+         System.out.println("Total Belanja = "+ Total);
+         System.out.println("Hadiah = "+ Hadiah);
+    
+    }
+}
+
+===================================================================================================================================================================
+
+package LatihanJava;
+import java.util.Scanner;
+/**
+ *
+ * @author UmatSangar
+ */
+public class LatihanPerulangan {
+    public static void main(String[] args){
+    System.out.println("Nama : ILham Kamal \nNIM : 17200392 \nKelas : 17.2A.01");
+    //Deklarasi Variabel
+    String nama, fasilitas = null, nomor_HP;
+    int kamar, lama_sewa, biaya = 0;
+    double total;
+    //Variabel While
+    boolean running = true;
+    int counter = 0;
+    String jawab;
+    //Membuat Scanner Baru 
+    Scanner scan = new Scanner(System.in);
+    Scanner keyboard = new Scanner(System.in);
+    
+        System.out.println("Masukan Nama:");
+        nama = scan.next();
+        System.out.println("Masukan NIM:");
+        nomor_HP = scan.next();
+        System.out.println("Pilihan Kamar [1]/[2]/[3]: ");
+        kamar = scan.nextInt();
+        System.out.println("Lama Sewa");
+        lama_sewa = scan.nextInt();
+        //Proses
+        total = lama_sewa * biaya;
+        if (kamar == 1){
+             biaya =500000;
+             fasilitas = "Sarapan Gratis";
+         }
+         else if (kamar == 2){
+                  biaya = 700000;
+                  fasilitas = "Sarapan Dan Wifi Gratis";
+         }
+         else if (kamar == 3){
+                  biaya = 1000000;
+                  fasilitas = "Sarapan Gratis, Wifi Gratis, Dan Kolam Renang";       
+         }
+         else {
+                   System.out.println("Mohon Pilih Kamar Anda");
+         }
+         //Mencetak Hasil
+         System.out.println("/n");
+         System.out.println("Nama = "+ nama);
+         System.out.println("Nomor HP = "+ nomor_HP);
+         System.out.println("Lama Inap = "+ lama_sewa);
+         System.out.println("Fasilitas = "+ fasilitas);
+         System.out.println("Total Biaya Sewa = "+ total);
+         System.out.println("/n");
+         
+         while (running){
+             System.out.println("Apakah Ingin Input Data Lagi?");
+             System.out.println("Jawab [Ya/Tidak]");
+             
+             jawab = scan.nextLine();
+             
+             if(jawab.equalsIgnoreCase("Ya")){
+             running = false;
+         }
+             counter++;
+         }
+    }
+
+}
+
+===================================================================================================================================================================
+
+package LatihanJava;
+import java.util.Scanner;
+/**
+ *
+ * @author UmatSangar
+ */
+public class LatihanKondisiDanPerulangan {public static void main(String[] args){
+     for(String ulang = "Y";ulang.equals("Y") || ulang.equals("y");){
+         String nama, nomor_hp, fasilitas ="None";
+         int pilihan_kamar, lama_sewa, biaya = 0;
+         double total;
+         
+         Scanner keyboard = new Scanner(System.in);
+         
+         System.out.println("Masukan Nama:");
+         nama = keyboard.nextLine();
+         System.out.println("Masukan Nomor HP");
+         nomor_hp = keyboard.nextLine();
+         System.out.println("Pilihan Kamar [1]/[2]/[3]");
+         pilihan_kamar = keyboard.nextInt();
+         System.out.println("Lama Sewa:");
+         lama_sewa = keyboard.nextInt();
+         
+         if(pilihan_kamar == 1){
+             biaya = 500000;
+             fasilitas = "Sarapan Gratis";
+          }
+         else if(pilihan_kamar == 2){
+                 biaya = 700000;
+                 fasilitas = "Sarapan Gratis Dan Wifi Gratis";
+          }
+         else if(pilihan_kamar == 3){
+                 biaya = 1000000;
+                 fasilitas = "Sarapan Gratis,Wifi Gratis,Kolam Renang";
+          }
+         else{
+             System.out.println("Maaf Menu Anda Masukan Salah");
+         }
+         total = lama_sewa * biaya;
+         
+         System.out.println("Nama = "+ nama);
+         System.out.println("Nomor HP = "+ nomor_hp);
+         System.out.println("Lama Sewa = "+ lama_sewa);
+         System.out.println("Fasilitas = "+ fasilitas);
+         System.out.println("Total Biaya Sewa = "+ total);
+         System.out.println("Apakah ingin input data lagi ? (Y/T)");
+         ulang = keyboard.next();
+     }    
+   }
+}
+
+===================================================================================================================================================================
+
+package LatihanJava;
+import java.util.*;
+import java.io.BufferedReader; 
+import java.io.IOException; 
+import java.io.InputStreamReader;
+/**
+ *
+ * @author UmatSangar
+ */
+public class Kasus1 {public static void main(String[]args)throws IOException{ 
+    InputStreamReader scanner = new InputStreamReader(System.in); 
+    BufferedReader input = new BufferedReader(scanner);
+
+    int i,j;
+    double total = 0;
+    String[] jenis, ukuran, nama; 
+    int[] jumlah_beli;
+    double[] harga, jumlah_harga, pajak, total_bayar; 
+    jenis = new String[10];
+    ukuran = new String[10]; 
+    jumlah_beli = new int[10]; 
+    harga = new double[10]; 
+    jumlah_harga = new double[10]; 
+    pajak = new double[10]; 
+    total_bayar = new double[10]; 
+    nama = new String[10];
+    System.out.print("Masukkan Jumlah Data : ");j = Integer.parseInt(input.readLine());
+
+        for(i = 1;i<=j;i++)
+        { System.out.print("Data ke - " + i);
+        System.out.print("Merk Helm [KYT]/[ZEUS] : ");jenis[i]=input.readLine(); 
+        System.out.print("Jumlah : ");jumlah_beli[i]=Integer.parseInt(input.readLine()); 
+        System.out.print("Ukuran : ");ukuran[i]=input.readLine(); 
+        System.out.println("");
+
+        if(jenis[i].equalsIgnoreCase("kyt")){ 
+            nama[i]="kyt"; 
+            if(ukuran[i].equalsIgnoreCase("S")){
+            harga[i] = 80000;
+
+        }else if(ukuran[i].equalsIgnoreCase("M")){ 
+            harga[i] = 70000;
+        } else{
+            harga[i] = 60000;
+        }
+        }else{
+            if(ukuran[i].equalsIgnoreCase("S")){ 
+                harga[i] = 90000;
+            }else if(ukuran[i].equalsIgnoreCase("M")){ 
+                harga[i] = 85000;
+            }else{
+                harga[i] = 75000;
+            }
+           }
+            jumlah_harga[i]=harga[i]*jumlah_beli[i]; 
+            pajak[i]=jumlah_harga[i]*0.1; 
+            total_bayar[i]=jumlah_harga[i]+pajak[i]; 
+            total = total + total_bayar[i];
+            }
+            System.out.println("TOKO HELM SEJAHTERA "); 
+            System.out.println("");
+
+            for(i=1;i<=j;i++){ System.out.println("Data ke - " + i);
+            System.out.println("Jenis Helm : " + jenis[i]); 
+            System.out.println("Ukuran : " + ukuran[i]); 
+            System.out.println("Harga : " + harga[i]); 
+            System.out.println("Jumlah Beli : " + jumlah_beli[i]); 
+            System.out.println("Jumlah Harga : " + jumlah_harga[i]); 
+            System.out.println("Pajak : " + pajak[i]); 
+            System.out.println("Total Bayar : " + total_bayar[i]); 
+            System.out.println("");
+    }
+
+    System.out.println("Harga Semuanya Adalah : " + total);
+    }
+    }
+
+===================================================================================================================================================================
+
+package LatihanJava;
+import java.util.*;
+/**
+ *
+ * @author UmatSangar
+ */
+public class Kasus2 {public static void main(String[] args){
+    Scanner input=new Scanner(System.in); 
+    
+    int i,jd;
+    String [] nm=new String[10]; 
+    String [] kp=new String[10]; 
+    String [] almt=new String[10]; 
+    String tanya="";
+
+    do{
+    System.out.print(" Masukan Jumlah Data :"); jd=input.nextInt();
+    for(i=1;i<=jd;i++)
+    {
+    System.out.println(" Data Ke- " +i); 
+    System.out.print(" Kode Pelanggan :"); kp[i]=input.next();
+    System.out.print(" Nama Pelanggan :"); nm[i]=input.next();
+    System.out.print(" Alamat Pelanggan :"); almt[i]=input.next();
+    }
+ 
+        System.out.println("\t\t DATA PELANGGAN PT. SENTOSA JAYA "); 
+        System.out.println("\t\t JL. KSU No.66A SUKMAJAYA DEPOK ");
+
+        System.out.println("==============================================================");
+        //System.out.println("No \t Kode Pelanggan \t Nama Pelanggan\t\t Alamat");
+        //System.out.println("==============================================================");
+        for (i=1;i<=jd;i++){
+        System.out.println("Data Ke- " +i); 
+        System.out.println("Kode Pelanggan :" +kp[i]); 
+        System.out.println("Nama Pelanggan :" +nm[i]); 
+        System.out.println("Alamat Pelanggan :" +almt[i]);
+        System.out.println("==============================================================");
+        //System.out.println(i+"\t\t"+kp[i]+"\t\t\t\t\t"+nm[i]+"\t\t\t\t\t"+almt[i]);
+        }
+        //System.out.println("==============================================================");
+        System.out.print("Mau input data lagi :");tanya=input.next();
+        }while(tanya.equals("Y") ||tanya.equals("y"));
+        }
+    }
+
+===================================================================================================================================================================
+
+package LatihanJava;
+import java.io.*; 
+import java.util.*;
+/**
+ *
+ * @author UmatSangar
+ */
+public class Kasus Java {public static void main(String[]args){
+    int i, jumlah_data, harga_barang = 0, totalperkode = 0, total_dapat = 0; 
+    String kodebar, nama_petugas, nambar = null, tgl = null;
+    Scanner scan = new Scanner(System.in);
+
+    String[] kodbar = new String[10]; 
+    int[] jumlah = new int[10];
+    ArrayList<Integer> subtotal = new ArrayList<Integer>();
+
+    System.out.println("\t\t PT.PERMATA" + "PRATAMA"); 
+    System.out.println("+++++++++++++++++++++++++++++++++++++++++");
+    System.out.print("Masukan Nama Petugas	: "); 
+    nama_petugas = scan.next();
+    nama_petugas += scan.nextLine(); 
+    System.out.print("Tanggal                 : "); 
+    tgl = scan.next();
+    tgl += scan.nextLine(); 
+    System.out.print("Masukkan Jumlah Data	: "); 
+    jumlah_data = scan.nextInt();
+    //System.out.println("=========================================");
+
+    for(i=1;i<=jumlah_data;i++)
+    {
+    System.out.println("==========================================="); 
+    System.out.println("\t Data ke	: " +i); 
+    System.out.print("\t Kode Barang    : ");
+    //System.out.print("\t	"); 
+    kodbar[i] = scan.next(); 
+    kodbar[i] += scan.nextLine();
+    System.out.print("\t Jumlah         : "); 
+    jumlah[i] = scan.nextInt();
+    }
+    System.out.println("==================================================================================================="); 
+    System.out.println("\t\t\t\t PT.PERMATA" + "PRATAMA");
+    System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+    System.out.println("Nama Petugas                :" + nama_petugas + " \t\t\t\t\t\t Tanggal :" + tgl); 
+    System.out.println("Jumlah Data yang di masukan : " + jumlah_data);
+    System.out.println("===================================================================================================");
+    System.out.println("Data ke\t\tKode Barang\tNama Barang\tHarga Barang\tJumlah Barang\tTotal harga");
+    System.out.println("===================================================================================================");
+
+    for(i=1;i<=jumlah_data;i++){ kodebar = kodbar[i];
+
+    switch(kodebar.toUpperCase()){ 
+        case "P001":
+          nambar = "Printer"; 
+          harga_barang = 700000;
+          totalperkode = harga_barang * jumlah[i]; subtotal.add(totalperkode);
+          break; 
+        case "V001":
+          nambar = "VGA Card"; 
+          harga_barang = 75000;
+          totalperkode = harga_barang * jumlah[i]; subtotal.add(totalperkode);
+          break; 
+        case "M001":
+          nambar = "MotherBoard"; 
+          harga_barang = 950000;
+          totalperkode = harga_barang * jumlah[i]; subtotal.add(totalperkode);
+          break;
+      }
+        System.out.println(i+ "\t\t" + kodbar[i] + "\t\t " + nambar + "\t" + harga_barang + "\t\t" + jumlah[i] + "\t\t" + totalperkode);
+        System.out.println("===================================================================================================");
+    }
+        for(int sub_total : subtotal){
+        total_dapat = total_dapat + sub_total;
+    }
+        System.out.println("Total Pendapatan Pada Tanggal\t" + tgl + "\t adalah sebesar Rp. " + total_dapat);
+      }
+ }
+
+===================================================================================================================================================================
