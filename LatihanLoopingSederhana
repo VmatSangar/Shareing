@@ -1,0 +1,46 @@
+/**
+ *
+ * @author toshiba
+ */
+import java.util.*;
+
+public class LatihanLoopingSederhana {
+    
+    public static void main(String[] args){
+        
+        System.out.println("Ini adalah awal program");
+        
+        //Program untuk menjumlahkan angka dengan rentang
+        
+        int nilaiAwal,nilaiAkhir,total;
+        
+        Scanner inputUser = new Scanner (System.in);
+        System.out.print("Masukan Nilai Awal = ");
+        nilaiAwal = inputUser.nextInt();
+        System.out.print("Masukan Nilai Akhir = ");
+        nilaiAkhir = inputUser.nextInt();
+        
+        total = 0;
+        
+        while(nilaiAwal <= nilaiAkhir){
+            total = total + nilaiAwal;
+            System.out.println("Ditambah " + nilaiAwal + "Menjadi" + total);
+            nilaiAwal++;
+        }
+        
+        do { 
+            total = total + nilaiAwal;
+            System.out.println("Ditambah " + nilaiAwal + "Menjadi" + total);
+            nilaiAwal++;
+            }while(nilaiAwal <= nilaiAkhir);
+        
+        for(;nilaiAwal <= nilaiAkhir; nilaiAwal++){
+            total = total + nilaiAwal;
+            System.out.println("Ditambah " + nilaiAwal + " Menjadi " + total);
+        }  
+        
+               
+        
+        
+    }
+}
