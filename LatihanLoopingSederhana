@@ -38,9 +38,5 @@ public class LatihanLoopingSederhana {
             total = total + nilaiAwal;
             System.out.println("Ditambah " + nilaiAwal + " Menjadi " + total);
         }  
-        
-               
-        
-        
     }
 }
